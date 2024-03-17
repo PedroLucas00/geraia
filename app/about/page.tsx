@@ -42,7 +42,7 @@ export default function About() {
                                 Our mission is change the world if the power of LLMs.
                             </h2>
                             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                We believe the web is the most powerful platform in the world. It's where we connect, create, and
+                                We believe the web is the most powerful platform in the world. It&apos;s where we connect, create, and
                                 learn. And we want to make it as accessible, inclusive, and innovative as possible.
                             </p>
                         </div>
@@ -57,7 +57,7 @@ export default function About() {
                                 <div>
                                     <dt className="font-semibold">Innovation</dt>
                                     <dd className="text-sm text-gray-500 dark:text-gray-400">
-                                        We are constantly pushing the boundaries of what's possible on the web.
+                                        We are constantly pushing the boundaries of what&apos;s possible on the web.
                                     </dd>
                                 </div>
                                 <div>
@@ -106,24 +106,5 @@ export default function About() {
             </section>
         </main>
     </div>
-    )
-}
-
-function MountainIcon(props: any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-        </svg>
     )
 }
