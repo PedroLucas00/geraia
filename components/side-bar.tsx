@@ -11,6 +11,7 @@ const Sidebar = () => {
 
     const menuItems = [
         { url: "/", text: "Home" },
+        { url: "/projects", text: "Projects" },
         { url: "/about", text: "About" },
         { url: "/contact", text: "Contact" },
     ];
