@@ -6,6 +6,7 @@
 // import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 
 import NavBar from "@/components/nav-bar"
+import logoGeraia from "@/images/geraia.svg"
 import Image from "next/image"
 import imageLogo from "@/images/apple-logo-1024x728.png"
 
@@ -29,11 +30,11 @@ export default function Home() {
         <div className="container grid justify-center items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
           <div className="space-y-2 ">
             <div className="flex space-y-1 justify-center justify-items-center items-center">
-              <Image alt="Logo" className="p-0 m-2" height="150" src="https://geraia.vercel.app/geraia.svg" width="150" />
-              <h1 className="text-6xl font-bold tracking-tighter sm:text-6xl md:text-8xl">GERAIA</h1>
+              <Image alt="Logo" className="p-0 m-2" height="150" src={logoGeraia} width="150" />
+              <h1 className="text-6xl text-violet-800 font-bold tracking-tighter sm:text-6xl md:text-8xl">GERAIA</h1>
             </div>
             <div className="space-y-1 justify-center justify-items-center items-center">
-              <p className="text-gray-500 md:text-xl/relaxed dark:text-gray-400">
+              <p className="text-zinc-900 md:text-xl/relaxed dark:text-zinc-900">
                 Advancing knowledge in computer science and beyond.
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -43,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="w-full py-12 md:py-12 lg:py-24">
+      <section className="w-full py-12 md:py-12 lg:py-12">
         <div className="w-full container grid max-w-full items-center gap-4 px-4 text-left md:gap-4 md:px-6 lg:grid-cols-2 lg:text-left xl:max-w-full xl:gap-0">
           <div className="space-y-6 pl-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Research Areas</h2>
@@ -52,7 +53,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4 md:grid-cols-2 md:gap-6">
               <div className="flex grid grid-rows-2 rounded-lg border bg-card text-card-foreground shadow-sm p-5">
                 <div className="flex items-center">
-                  <div className="rounded-full bg-purple-700 p-4 mr-2">
+                  <div className="rounded-full bg-violet-700 p-4 mr-2">
                     <FileCodeIcon className="flex-shrink-0 text-white" />
                   </div>
                   <h3 className="text-xl font-medium tracking-tighter">Programming Languages</h3>
@@ -65,7 +66,7 @@ export default function Home() {
               </div>
               <div className="flex grid grid-rows-2 rounded-lg border bg-card text-card-foreground shadow-sm p-5">
                 <div className="flex items-center">
-                  <div className="rounded-full bg-purple-700 p-4 mr-2">
+                  <div className="rounded-full bg-violet-700 p-4 mr-2">
                     <BotIcon className="flex-shrink-0 text-white" />
                   </div>
                   <h3 className="text-xl font-medium tracking-tighter">Artificial Intelligence</h3>
@@ -78,7 +79,7 @@ export default function Home() {
               </div>
               <div className="flex grid grid-rows-2 rounded-lg border bg-card text-card-foreground shadow-sm p-5">
                 <div className="flex items-center">
-                  <div className="rounded-full bg-purple-700 p-4 mr-2">
+                  <div className="rounded-full bg-violet-700 p-4 mr-2">
                     <NetworkIcon className="flex-shrink-0 text-white" />
                   </div>
                   <h3 className="text-lg font-medium tracking-tighter">Computer Networks</h3>
@@ -91,7 +92,7 @@ export default function Home() {
               </div>
               <div className="flex grid grid-rows-2 rounded-lg border bg-card text-card-foreground shadow-sm p-5">
                 <div className="flex items-center">
-                  <div className="rounded-full bg-purple-700 p-4 mr-2">
+                  <div className="rounded-full bg-violet-700 p-4 mr-2">
                     <BarChartIcon className="flex-shrink-0 text-white" />
                   </div>
                   <h3 className="text-lg font-medium tracking-tighter">Data Science</h3>
@@ -116,22 +117,22 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 pl-6">
-              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-purple-700">
+              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-violet-700">
                 <div className="flex items-start">
                   <h3 className="text-white text-lg font-medium tracking-tighter">Computer Networks</h3>
                 </div>
               </div>
-              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-purple-700">
+              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-violet-700">
                 <div className="flex items-start">
                   <h3 className="text-white text-lg font-medium tracking-tighter">Computer Networks</h3>
                 </div>
               </div>
-              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-purple-700">
+              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-violet-700">
                 <div className="flex items-start">
                   <h3 className="text-white text-lg font-medium tracking-tighter">Computer Networks</h3>
                 </div>
               </div>
-              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-purple-700">
+              <div className="h-40 flex grid grid-rows-0 text-end rounded-lg border bg-card text-card-foreground shadow-sm p-5 bg-violet-700">
                 <div className="flex items-start">
                   <h3 className="text-white text-lg font-medium tracking-tighter">Computer Networks</h3>
                 </div>
@@ -149,27 +150,25 @@ export default function Home() {
                 Showcasing our innovative startups.
               </p>
             </div>
-            <div className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] z-0">
-              <div className="container w-full flex-nowrap inline-flex [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                {startupsList.map(({ logo, name }, index) => {
-                  return <div key={index} className="h-40 flex text-end border border-zinc-400 bg-card text-card-foreground shadow-sm p-10 bg-white
-                    hover:border-purple-700 hover:scale-125 hover:border-4 duration-300
+            <div className="container h-40 flex-nowrap inline-flex [&_li]:mx-8 [&_img]:max-w-fill hover:animate-none animate-infinite-scroll">
+              {startupsList.map(({ logo, name }, index) => {
+                return <div key={index} className="h-36 w-full flex text-end border border-zinc-400 bg-card text-card-foreground shadow-sm p-10 bg-white
+                    hover:border-violet-700 hover:scale-125 hover:border-4 duration-200
                   ">
-                    <div className="flex items-start">
-                      <h3 className="text-zinc-400 text-lg font-medium tracking-tighter">
-                        <Image
-                          alt={name}
-                          className="p-auto"
-                          src={imageLogo}
-                          width={100}
-                          height={100}
-                        />
-                      </h3>
-                    </div>
+                  <div className="flex items-center">
+                    <Image
+                      alt={name}
+                      className="p-auto"
+                      src={imageLogo}
+                      width={100}
+                      height={100}
+                    />
+                    <h3 className="text-zinc-400 text-lg font-medium tracking-tighter">
+                    </h3>
                   </div>
-                })
-                }
-              </div>
+                </div>
+              })
+              }
             </div>
           </div>
         </div>

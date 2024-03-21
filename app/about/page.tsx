@@ -5,11 +5,11 @@ import image2 from "@/images/WhatsApp Image 2024-03-15 at 7.09.54 PM.jpeg"
 
 export default function About() {
     const collaborators = [
-        { name: "A", profileImage: "", miniBio: "Ipsum lorem"},
-        { name: "B", profileImage: "", miniBio: "Ipsum lorem"},
-        { name: "C", profileImage: "", miniBio: "Ipsum lorem"},
-        { name: "D", profileImage: "", miniBio: "Ipsum lorem"},
-        { name: "E", profileImage: "", miniBio: "Ipsum lorem"}
+        { name: "A", profileImage: "", miniBio: "Ipsum lorem" },
+        { name: "B", profileImage: "", miniBio: "Ipsum lorem" },
+        { name: "C", profileImage: "", miniBio: "Ipsum lorem" },
+        { name: "D", profileImage: "", miniBio: "Ipsum lorem" },
+        { name: "E", profileImage: "", miniBio: "Ipsum lorem" }
     ]
 
     return (<div className="flex flex-col min-h-[100dvh]">
@@ -19,7 +19,7 @@ export default function About() {
                     <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
                         <div className="space-y-2">
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-zinc-900">About Us</h1>
-                            <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                            <p className="max-w-[600px] text-gray-600 md:text-xl dark:text-gray-500">
                                 We are a team of passionate individuals dedicated to providing the best web experiences for our
                                 customers.
                             </p>
@@ -34,7 +34,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className="w-full py-24 md:py-24 lg:py-24">
+            <section className="w-full py-24 md:py-24 lg:py-24 mt-8">
                 <div className="container px-4 md:px-4">
                     <div className="grid max-w-5xl mx-auto items-start gap-6 lg:grid-cols-2 lg:gap-10">
                         <div className="space-y-4">
@@ -77,24 +77,24 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className="w-full px-24 py-12 md:py-24 lg:py-32 mb-12">
+            <section className="w-full px-24 py-12 md:py-12 lg:py-24 mb-12">
                 <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-1 lg:gap-10">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Meet the Team</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-5xl/tight">Meet the Team</h2>
                         <p className="text-gray-500 dark:text-gray-400">The people behind the platform.</p>
                     </div>
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             collaborators.map(({ name, profileImage, miniBio }, index) => {
-                                return <div key={index} className="flex text-center items-center flex-col gap-1">
+                                return <div key={index} className="flex text-start items-start gap-1 hover:scale-110 hover:text-zinc-900 duration-200">
                                     <Image
                                         alt="Avatar"
-                                        className="rounded-full bg-black aspect-square overflow-hidden object-cover object-center"
+                                        className="rounded-2xl bg-black aspect-square overflow-hidden object-cover object-center"
                                         height="100"
                                         src="/placeholder.svg"
                                         width="100"
                                     />
-                                    <div className="flex flex-col gap-1">
+                                    <div className="flex flex-col gap-1 ml-5">
                                         <h3 className="font-bold">{name}</h3>
                                         <p className="text-sm text-gray-500 dark:text-gray-400">{miniBio}</p>
                                     </div>

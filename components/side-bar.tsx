@@ -1,14 +1,10 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-// import { BsFillCartFill } from "react-icons/bs";
-// import { TbTruckDelivery } from "react-icons/tb";
-// import { FaWallet } from "react-icons/fa";
-// import { MdFavorite, MdHelp } from "react-icons/md";
 
 const Sidebar = () => {
     const [nav, setNav] = useState(false);
-
+    
     const menuItems = [
         { url: "/", text: "Home" },
         { url: "/projects", text: "Projects" },
@@ -17,11 +13,11 @@ const Sidebar = () => {
     ];
 
     return (
-        <div className="flex justify-between items-left p-4">
+        <div className="sidebar flex justify-between items-left p-4">
             {/* Left side */}
             <div className="flex items-center">
                 <div onClick={() => setNav(!nav)} className="cursor-pointer">
-                    <AiOutlineMenu className="text-purple-700" size={30} />
+                    <AiOutlineMenu className="text-violet-500 hover:text-violet-800 duration-100" size={30} />
                 </div>
             </div>
 
@@ -36,21 +32,22 @@ const Sidebar = () => {
             <div
                 className={
                     nav
-                        ? "fixed top-0 right-0 w-[300px] h-screen bg-purple-700 white z-10 duration-300 text-center"
-                        : "fixed top-0 right-[-100%] w-[300px] h-screen bg-purple-700 z-10 duration-300 text-center"
+                        ? "fixed top-0 right-0 w-[300px] h-screen bg-violet-700 white z-10 duration-300 text-center"
+                        : "fixed top-0 right-[-100%] w-[300px] h-screen bg-violet-700 z-10 duration-300 text-center"
                 }
             >
                 <AiOutlineClose
                     onClick={() => setNav(!nav)}
                     size={30}
-                    className="absolute text-white right-6 top-6 cursor-pointer hover:text-black"
+                    className="absolute text-white right-6 top-6 cursor-pointer hover:text-zinc-900 duration-200"
                 />
                 <nav className="mt-28 h-full">
                     <ul className="h-full flex flex-col p-10 my-auto text-white text-center">
                         {menuItems.map(({ url, text }, index) => {
                             return (
                                 <div key={index} className="py-8">
-                                    <Link href={url} className="text-3xl text-center text-white cursor-pointer w-ful mx-auto p-2 hover:text-black">
+                                    <Link href={url} onClick={() => setNav(!nav)} className="text-3xl text-center text-white cursor-pointer 
+                                    w-ful mx-auto p-2 hover:text-zinc-900 duration-200">
                                         {text}
                                     </Link>
                                 </div>
